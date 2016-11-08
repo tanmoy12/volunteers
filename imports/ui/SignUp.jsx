@@ -37,12 +37,27 @@ export default class SignUp extends Component {
         return (
             <div className="container">
                 <form onSubmit={this.handleRegister.bind(this)}>
-                    <input ref="username" type="text" placeholder="username"/>
-                    <input ref="email" type="text" placeholder="email"/>
-                    <input ref="password" type="password" placeholder="password" name="" id=""/>
-                    <button type="submit" className="btn btn-md btn-success">Sign Up</button>
-                    <p>{this.state.message}</p>
+                    <div className="col-sm-9">
+                        <div className="form-group">
 
+                                <input ref="username" type="text" placeholder="Username"
+                                       className="form-control"/>
+
+                        </div>
+
+
+                        <div className="form-group">
+                            <input type="text" placeholder="Email or mobile number" ref="email"
+                                   className="form-control"/>
+                        </div>
+                        <div className="form-group">
+                            <input type="password" placeholder="New password" ref="password"
+                                   className="form-control"/>
+                        </div>
+                        <button type="submit" className="btn btn-md btn-success">Sign Up</button>
+                        <br/>
+                        <p>{this.state.message}</p>
+                    </div>
                 </form>
 
             </div>

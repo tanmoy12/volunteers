@@ -267,12 +267,15 @@
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/kadira_flow-router/2.12.1/web.browser/client/router.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/kadira_flow-router/2.12.1/web.browser/lib/router.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/observe-sequence/1.0.14/web.browser/observe_sequence.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/fortawesome_fontawesome/4.7.0/web.browser/upstream/css/font-awesome.css" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/localstorage/1.0.12/web.browser/localstorage.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/rate-limit/1.0.6/web.browser/rate-limit.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/reactive-dict/1.1.8/web.browser/reactive-dict.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/reactive-dict/1.1.8/web.browser/reactive-dict-tests.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/reactive-dict/1.1.8/web.browser/migration.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/twbs_bootstrap/3.3.6/web.browser/dist/css/bootstrap.css" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/service-configuration/1.0.11/web.browser/service_configuration_common.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/twbs_bootstrap/3.3.6/web.browser/dist/js/bootstrap.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/session/1.1.7/web.browser/session.js" />
       </sourceFilesUrls>
     </properties>
@@ -542,12 +545,15 @@
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/kadira_flow-router/2.12.1/web.browser/client/router.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/kadira_flow-router/2.12.1/web.browser/lib/router.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/observe-sequence/1.0.14/web.browser/observe_sequence.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/fortawesome_fontawesome/4.7.0/web.browser/upstream/css/font-awesome.css" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/localstorage/1.0.12/web.browser/localstorage.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/rate-limit/1.0.6/web.browser/rate-limit.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/reactive-dict/1.1.8/web.browser/reactive-dict.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/reactive-dict/1.1.8/web.browser/reactive-dict-tests.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/reactive-dict/1.1.8/web.browser/migration.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/twbs_bootstrap/3.3.6/web.browser/dist/css/bootstrap.css" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/service-configuration/1.0.11/web.browser/service_configuration_common.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/twbs_bootstrap/3.3.6/web.browser/dist/js/bootstrap.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/session/1.1.7/web.browser/session.js" />
     </CLASSES>
     <SOURCES />

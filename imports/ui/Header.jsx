@@ -1,19 +1,16 @@
 import React, { Component } from 'react';
+import SignIn from './SignIn';
 
 export default class Header extends Component {
     render() {
         return (
+            <div>
 
-                <nav>
-                    <div className="nav-wrapper">
-                        <ul id="nav-mobile" className="right hide-on-med-and-down">
-                            <li><a href="sass.html">Events</a></li>
-                            <li><a href="badges.html">Profile</a></li>
-                            <li><a href="badges.html">{this.props.currentUser}</a></li>
-                        </ul>
+                    <div className="header">
+                        <SignIn/>
                     </div>
-                </nav>
 
+            </div>
         );
     }
 }

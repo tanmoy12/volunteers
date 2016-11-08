@@ -26,3 +26,5 @@ poetic:materialize-scss
 accounts-password
 meteortoys:allthings
 react-meteor-data
+twbs:bootstrap
+fortawesome:fontawesome

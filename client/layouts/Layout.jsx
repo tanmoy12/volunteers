@@ -5,3 +5,4 @@ export const Layout = ({content}) => (
         {content}
     </div>
 )
+
