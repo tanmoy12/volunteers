@@ -40,9 +40,18 @@ export default class Event extends Component {
         });
     }
     removeEvent(e){
+        e.preventDefault();
+
         Events.remove(this.props.eventdetails._id);
+        let volunteerList = Volunteers.find({eventId: this.props.eventdetails._id}).fetch();
+
+        volunteerList.map(function (eventVolunteer) {
+            Volunteers.remove(eventVolunteer._id)
+        });
+
     }
     joinEvent(e){
+        e.preventDefault();
         let eventid= this.props.eventdetails._id;
         let volunteerid= Meteor.userId();
         Volunteers.insert({
@@ -55,6 +64,7 @@ export default class Event extends Component {
         })
     }
     removefromEvent(e){
+        e.preventDefault();
         let eventid= this.props.eventdetails._id;
         let volunteerid= Meteor.userId();
 
