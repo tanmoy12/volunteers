@@ -50,6 +50,10 @@ Dashboard.propTypes = {
 };
 
 export default createContainer(() => {
+    Meteor.subscribe('events');
+    Meteor.subscribe('volunteers');
+    Meteor.subscribe('userData');
+
     return {
         events: Events.find({}, { sort: { date: -1 } }).fetch(),
         incompleteCount: Events.find({}).count(),

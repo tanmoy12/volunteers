@@ -41,23 +41,14 @@ export default class Event extends Component {
     }
     removeEvent(e){
         e.preventDefault();
-
-        Events.remove(this.props.eventdetails._id);
-        let volunteerList = Volunteers.find({eventId: this.props.eventdetails._id}).fetch();
-
-        volunteerList.map(function (eventVolunteer) {
-            Volunteers.remove(eventVolunteer._id)
-        });
-
+        Meteor.call('events.remove', this.props.eventdetails._id);
+        Meteor.call('volunteers.removeEventVolunteers', this.props.eventdetails._id);
     }
     joinEvent(e){
         e.preventDefault();
         let eventid= this.props.eventdetails._id;
         let volunteerid= Meteor.userId();
-        Volunteers.insert({
-            eventId: eventid,
-            volunteerId: volunteerid
-        });
+        Meteor.call('volunteers.insert', eventid,volunteerid);
         this.setState({
             join:false,
             leave:true
@@ -67,13 +58,8 @@ export default class Event extends Component {
         e.preventDefault();
         let eventid= this.props.eventdetails._id;
         let volunteerid= Meteor.userId();
+        Meteor.call('volunteers.removeVolunteer', eventid,volunteerid);
 
-        let doc= Volunteers.findOne({
-            eventId: eventid,
-            volunteerId: volunteerid
-        });
-
-        Volunteers.remove(doc._id);
         this.setState({
             join:true,
             leave:false
@@ -104,7 +90,6 @@ export default class Event extends Component {
                 </form>
             )
         }
-        console.log(joinForm);
         return (
             <div className="container-fluid">
                 <div className="col-md-8">

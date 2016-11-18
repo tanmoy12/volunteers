@@ -11,13 +11,7 @@ export default class Header extends Component {
         var eventname = ReactDOM.findDOMNode(this.refs.event_name).value.trim();
         var  location= ReactDOM.findDOMNode(this.refs.location).value.trim();
         var date = ReactDOM.findDOMNode(this.refs.date).value.trim();
-        Events.insert({
-            UserId: Meteor.userId(),
-            eventname: eventname,
-            location: location,
-            date: date,
-            createdat: new Date()
-        });
+        Meteor.call('events.insert', eventname,location,date);
 
     }
 
