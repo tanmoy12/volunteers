@@ -16,7 +16,7 @@ export default class Header extends Component {
                             <a href="/dashboard">Home</a>
                         </li>
                         <li className="pull-right">
-                            <form action={this.logout.bind(this)}>
+                            <form onSubmit={this.logout.bind(this)}>
                                 <button type="submit" className="btn btn-default">
                                     Logout
                                 </button>

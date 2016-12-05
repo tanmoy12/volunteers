@@ -14,7 +14,7 @@ export default class Event extends Component {
             remove= true;
         }
         let volunteerList = Volunteers.find({eventId: this.props.eventdetails._id, volunteerId: Meteor.userId()}).fetch();
-        if(volunteerList.size>0){
+        if(volunteerList.length>0){
             leave=true;
         }else{
             join=true;
